@@ -43,6 +43,7 @@ export function parseArgs<T extends ArgsDef = ArgsDef>(
     },
   });
 
+  // 校验
   for (const [, arg] of args.entries()) {
     if (arg.type === "positional") {
       const nextPositionalArgument = positionalArguments.shift();

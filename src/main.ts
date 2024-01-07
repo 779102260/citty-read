@@ -27,6 +27,7 @@ export async function runMain<T extends ArgsDef = ArgsDef>(
       }
       consola.log(meta.version);
     } else {
+      // * 
       await runCommand(cmd, { rawArgs });
     }
   } catch (error: any) {
